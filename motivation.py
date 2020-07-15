@@ -11,8 +11,7 @@ def job():
     file = 'audio/' + randomfile
     playsound.playsound(file, block=True)
 
-
-schedule.every(30).minutes.do(job)
+schedule.every(5).minutes.do(job)
 
 while 1:
     schedule.run_pending()
